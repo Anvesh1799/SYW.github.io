@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="">
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+      
+      .cart-container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      h1, h2 {
+        margin-bottom: 20px;
+      }
+      
+      .cart-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      
+      .cart-table th,
+      .cart-table td {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        text-align: left;
+      }
+      
+      .cart-table th {
+        font-weight: bold;
+      }
+      
+      .cart-summary {
+        margin-top: 30px;
+      }
+      
+      .cart-summary p {
+        margin-bottom: 5px;
+      }
+      
+      .checkout-btn {
+        display: block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        max-width: fit-content;
+        text-decoration: none;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+      
+      .checkout-btn:hover {
+        background-color: #222;
+      }
+      
+  </style>
+</head>
+<body>
+  <section class="cart-container">
+    <h1>Your Shopping Cart</h1>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Product 1</td>
+          <td>$10.00</td>
+          <td>1</td>
+          <td>$10.00</td>
+          <td><a href="#">Remove</a></td>
+        </tr>
+        <tr>
+          <td>Product 2</td>
+          <td>$20.00</td>
+          <td>2</td>
+          <td>$40.00</td>
+          <td><a href="#">Remove</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="cart-summary">
+      <h2>Cart Summary</h2>
+      <p>Subtotal: $50.00</p>
+      <p>Shipping: Free</p>
+      <p><b>Total: $50.00</b></p>
+      <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+    </div>
+  </section>
+</body>
+</html>
